@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JS1 Profe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="titulo">
+            My shopping list (<span>0</span> items)
+        </div>
+        <label for="itemInput">Enter a new item:</label>
+        <input type="text" id="itemInput" oninput="checkInput()" onkeypress="onPressed(event)">
+        <button onclick="addItem()" disabled type="submit">Add Item</button>
+        <ul>
+
+        </ul>
+    </div>
+    <script src="./js/profe.js"></script>
+</body>
+
+</html>

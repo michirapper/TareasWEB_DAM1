@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+}
+
+.botonTransicion {
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    margin-top: 280px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background: #32ebe1;
+    color: black;
+    font-weight: bold;
+    -webkit-transition: height .3s, background .3s;
+    -moz-transition: height .3s, background .3s;
+    -o-transition: height .3s, background .3s;
+    transition: height .3s, background .3s;
+    padding: 10px;
+    margin: 10px;
+}
+
+button:hover {
+    height: 65px;
+    background: #428bca;
+}
+
+.container{
+    justify-content: center;
+}

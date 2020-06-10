@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  height: 100%;
+}
+
+h1, h2 {
+  color: navy;
+  margin: auto;
+  text-align: center;
+  height: 10%;
+  width:100%;
+}
+
+main{
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+#left, #right{
+  width: 50%;
+  border: 1px solid red;
+
+  padding: 1%;
+}
+
+#left{
+  min-height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+#right{
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+#left h2{
+  width: 100%;
+
+}
+
+#left article{
+  width: 45%;
+  border: solid black 1px;
+  padding: 1%;
+}
+
+form{
+  width: 50%;
+}
+
+.mensajeDebug{
+  width: 70%;
+}

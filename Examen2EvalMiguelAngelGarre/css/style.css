@@ -1,0 +1,51 @@
+html {
+    background-color: black;
+    color: white
+}
+
+.container {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.radius {
+    border: 1px solid white;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    margin-top: 20px;
+    display: flex;
+    padding: 15px;
+    background-color: gray;
+}
+
+.contact {
+    border-right: 1px solid white;
+    padding-right: 10px;
+    padding: 0 15px 0 15px;
+    width: 100%;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.image {
+    padding: 0 15px 0 15px;
+    border-right: 1px solid white;
+    width: 100%;
+    text-align: center;
+}
+
+.info {
+    padding: 0 15px 0 15px;
+    width: 100%;
+}
+
+.email {
+    margin-left: 5px;
+}

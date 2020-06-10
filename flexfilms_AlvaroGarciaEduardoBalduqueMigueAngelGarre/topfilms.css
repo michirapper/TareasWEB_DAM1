@@ -1,0 +1,148 @@
+body {
+    font: 13px/1.231 Arial, sans-serif;
+}
+
+a {
+    cursor: pointer;
+}
+
+.panel {
+    display: flex;
+    justify-content: center;
+}
+
+#top-movies {
+    list-style: none;
+    padding: 0;
+}
+
+.movie-card {
+    padding: 15px 15px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid #DDD;
+}
+
+.position {
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mc-poster img {
+    box-shadow: 2px 3px 4px #BBBBBB;
+    border-radius: 5px;
+}
+
+.movie-data {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 15px;
+}
+
+.mc-info-container {
+    max-width: 400px;
+    border-right: 1px solid #DDD;
+    overflow: hidden;
+}
+
+.mc-info-container>div {
+    margin-bottom: 7px;
+}
+
+.movie-card .mc-title a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+}
+
+.movie-card .mc-title a:hover {
+    text-decoration: underline;
+}
+
+.movie-card img {
+    vertical-align: text-bottom;
+}
+
+.movie-card .mc-director a {
+    text-decoration: none;
+    color: #326E9C;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.movie-card .mc-director a:hover {
+    text-decoration: underline;
+}
+
+.movie-card .mc-cast a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+    text-overflow: ellipsis;
+}
+
+.movie-card .mc-cast a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.data {
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.data .avg-rating {
+    text-align: center;
+    color: #FFFFFF;
+    width: 2em;
+    margin: 0 auto;
+    border-radius: .3em;
+    box-sizing: border-box;
+    border: 1px solid #447CAD;
+    font-size: 24px;
+    background: #4682B4;
+    padding: .2em 0;
+}
+
+.rat-count {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    color: #666666;
+}
+
+@media screen and (max-width: 400px) {
+    .position {
+        display: none;
+    }
+    .mc-cast {
+        white-space: nowrap;
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .data {
+        width: auto;
+        margin-top: 0;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 0;
+    }
+    .data>.avg-rating {
+        margin: 0;
+    }
+    .data>.rat-count {
+        margin: 0 10px;
+    }
+    .movie-data {
+        flex-flow: column nowrap;
+    }
+    .mc-info-container {
+        border: 0;
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "estado" : "OK",
+  "numJugadores": 2,
+  "Jugadores": [
+    {
+      "id":1,
+      "nom": "Jugador 1",
+      "des": "Descripcion jugador 1",
+      "car": "caracteristica del jugador 1"
+    },
+    {
+      "id":2,
+      "nom": "Jugador 2",
+      "des": "Descripcion jugador 2",
+      "car": "caracteristica del jugador 2"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+html {
+    text-align: left;
+}
+
+.container {
+    display: flex;
+}
+
+.num {
+    display: inline-block;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    font-size: 16px;
+    margin-left: 3px;
+}
+
+.img {
+    display: inline-block;
+    box-shadow: 2px 3px 4px #BBBBBB;
+    border-radius: 5px;
+    height: 151px;
+}
+
+.data {
+    display: inline-block;
+    margin-left: 2em;
+    width: 500px;
+    border-right: 1px solid #DDD;
+}
+
+body {
+    font: 13px/1.231 Arial, sans-serif;
+}
+
+.title a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.director a {
+    color: #326E9C;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.actors a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+    line-height: 15px;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.lateral {
+    width: 100%;
+    margin: 20px 0 20px 35px;
+}
+
+.note {
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+    width: 2em;
+    margin: 0 auto;
+    border-radius: .3em;
+    box-sizing: border-box;
+    border: 1px solid #447CAD;
+    font-weight: normal;
+    font-size: 24px;
+    background: #4682B4;
+}
+
+.user-count {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #666666;
+}
+
+.calification {
+    vertical-align: middle;
+}
+
+.align {
+    width: 100px;
+    margin-top: 70px;
+}
+
+.flexing {
+    display: flex;
+    width: 50%;
+}
+
+hr {
+    border: 0 none #DDD;
+    border-top: 1px solid #DDD;
+}
+
+@media screen and (max-width: 400px) {
+    .data {
+        border-right: none;
+        width: 60%;
+    }
+    .actors {
+        width: 200px;
+        height: 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .flexing {
+        flex-direction: column;
+    }
+    .align {
+        display: flex;
+        margin-left: 20px;
+        margin-top: -10%;
+        display: flex;
+        width: 120px;
+    }
+    .num {
+        display: none;
+    }
+    .lateral {
+        width: 100%;
+    }
+}

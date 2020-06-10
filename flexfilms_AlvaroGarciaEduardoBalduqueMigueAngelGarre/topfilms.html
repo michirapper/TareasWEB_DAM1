@@ -1,0 +1,32 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top Peliculas</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="https://www.filmaffinity.com/favicon.png" />
+    <link rel="stylesheet" href="topfilms.css">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form onsubmit="return search();" action="#">
+        <label>Buscador</label>
+        <input id="query" type="text" >
+        <button type=submit>
+            Buscar
+        </button>
+    </form>
+    
+    <div class="panel">
+
+        <ul id="top-movies">
+
+        </ul>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
